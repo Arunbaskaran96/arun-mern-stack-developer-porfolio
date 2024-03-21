@@ -1,0 +1,14 @@
+.ul{
+    padding-top: 6px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    cursor: pointer;
+    z-index: 900;
+}
+.li{
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+}

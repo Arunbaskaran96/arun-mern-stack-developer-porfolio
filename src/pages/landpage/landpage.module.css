@@ -1,0 +1,70 @@
+.container{
+    height: 80vh;
+    color: rgb(46, 46, 46);
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+.dropdown{
+    height: 50px;
+}
+.h1{
+    font-size: 70px;
+}
+.h5{
+    font-size: 45px;
+}
+.h2{
+    font-size: 70px;
+}
+.h4{
+    font-size: 45px;
+}
+
+.image{
+    height: 250px;
+    width: 100%;
+    
+}
+.left{
+    flex: 6;
+    animation: left-to-right 300ms ease-in-out  ;
+}
+.right{
+    flex: 6;
+    animation: right-to-left 300ms ease-in-out  ;
+}
+.bottomContainer{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    animation: dropdown 500ms ease-in-out 300ms infinite;
+}
+@keyframes left-to-right {
+    0%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes right-to-left {
+    0%{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes dropdown {
+    0%{
+        transform:translateY(5px) ;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@media only screen and (max-width:600px){
+    .right{
+        display: none;
+    }
+}

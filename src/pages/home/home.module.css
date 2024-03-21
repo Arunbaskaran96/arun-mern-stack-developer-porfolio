@@ -1,0 +1,67 @@
+.heading{
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+.container{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    animation: scale-animation 600ms ease-in-out;
+}
+
+.about{
+    font-size: 20px;
+    font-weight: 300;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.iconContainer{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.linkedin{
+    color: aqua;
+    font-size: 45px;
+    cursor: pointer;
+}
+.github{
+    font-size: 45px;
+    cursor: pointer;
+}
+.btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:600px){
+    .about{
+        width: 100%;
+    }
+}
+
+.img{
+    height: 50px;
+    width: 50px;
+}
+
+@keyframes scale-animation {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

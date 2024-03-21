@@ -1,0 +1,70 @@
+@-webkit-keyframes dot-keyframes {
+    0% {
+      opacity: .4;
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      background-color: rgb(27, 112, 112);
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: scale(1.2, 1.2);
+              transform: scale(1.2, 1.2);
+      background-color: rgb(27, 112, 112);
+    }
+    100% {
+      opacity: .4;
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      background-color: rgb(27, 112, 112);
+    }
+  }
+  
+  @keyframes dot-keyframes {
+    0% {
+      opacity: .4;
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      background-color: rgb(27, 112, 112);
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: scale(1.2, 1.2);
+              transform: scale(1.2, 1.2);
+      background-color:rgb(27, 112, 112);
+    }
+    100% {
+      opacity: .4;
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      background-color: rgb(27, 112, 112);
+    }
+  }
+  
+  .loader {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .loader--dot {
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    -webkit-animation: dot-keyframes 1.5s infinite ease-in-out;
+            animation: dot-keyframes 1.5s infinite ease-in-out;
+  }
+  
+  .loader--dot:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  
+  .loader--dot:nth-child(2) {
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  
+  .loader--dot:nth-child(3) {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }

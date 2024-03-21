@@ -31,7 +31,11 @@ export default function Topbar() {
           </ul>
         </div>
         <div className={classes.menuIconContainer}>
-          {!isMobile ? <div>➕</div> : <div>✖</div>}
+          {!isMobile ? (
+            <div onClick={() => setIsMobile(!isMobile)}>➕</div>
+          ) : (
+            <div onClick={() => setIsMobile(!isMobile)}>✖</div>
+          )}
         </div>
       </div>
       {isMobile && (

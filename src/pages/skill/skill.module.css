@@ -1,0 +1,115 @@
+.heading{
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-top: 20px;
+    animation: left-to-right 500ms ease-in-out;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    animation: right-to-left 500ms ease-in-out;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    color: rgb(44, 44, 44);
+}
+
+.skillTop{
+    width: 300px;
+    padding: 15px 15px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.skill{
+    font-size: 25px;
+    text-align: center;
+}
+.des{
+    font-size: 17px;
+}
+.tech{
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: underline;
+    letter-spacing: 8px;
+    text-align: center;
+    animation: animate-scale 500ms ease-in-out;
+}
+
+.skillset{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon{
+    font-size: 45px;
+}
+.skillname{
+    font-size: 20px;
+}
+.loader{
+    margin-top: 30px;
+}
+.techContainer{
+    width: 90%;
+    margin: auto;
+    padding-top: 15px;
+    animation: bottom-to-top 500ms ease-in-out;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width:670px){
+    .top{
+        justify-content: center;
+    }
+}
+
+
+@keyframes left-to-right{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes right-to-left {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes animate-scale{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes bottom-to-top {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

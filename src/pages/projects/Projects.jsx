@@ -5,7 +5,6 @@ import chat from "../../assests/chat.png";
 import xui from "../../assests/xui.png";
 import indiainc from "../../assests/indiainc.png";
 import instabook from "../../assests/instabook.png";
-import vehicle from "../../assests/vehicle.png";
 import estate from "../../assests/realestate.png";
 
 export default function Projects() {

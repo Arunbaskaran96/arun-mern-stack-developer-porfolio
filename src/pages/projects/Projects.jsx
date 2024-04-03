@@ -136,7 +136,7 @@ export default function Projects() {
                 <div className={classes.tech}>Redux</div>
               </div>
             </div>
-            <div className={classes.project}>
+            {/* <div className={classes.project}>
               <img className={classes.image} src={instabook} alt="website" />
               <br />
               <div className={classes.nameContainer}>
@@ -178,7 +178,7 @@ export default function Projects() {
                 </div>
                 <div className={classes.tech}>Redux-saga</div>
               </div>
-            </div>
+            </div> */}
             {/* <div className={classes.project}>
               <img
                 className={classes.image}
